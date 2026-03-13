@@ -13,6 +13,6 @@ spec:
         app: python-app
     spec:
       containers:
-      - name: python-container
+      - name: kubContainer
         image: program2:v1
         imagePullPolicy: Never
