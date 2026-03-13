@@ -1,5 +1,5 @@
 FROM python:3.11
-WORKDIR /c/Users/george chellappa/project1
-COPY . .
+WORKDIR ./project1
+COPY . /project1
 RUN pip install -r requirements.txt
-CMD ["python","program2.py"]
+CMD ["python","program3.py"]
