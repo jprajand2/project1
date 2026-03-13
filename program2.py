@@ -1,3 +1,4 @@
 print ("this is a change done in git cli")
 print ("this is the line NEWLY added to test the build trigger")
 print ("this line is added in bash to test auto build, GREAT")
+print ("this line added in github, but when pulled from cle, see if the merge happens along with changes tagged as NEWLY ADDED")
