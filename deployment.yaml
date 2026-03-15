@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: python-webapp
-        image: jprajand2/program4:v1.0
+        image: jprajand2/program5:v2.0
         ports:
         - containerPort: 8080
 ---
