@@ -7,7 +7,7 @@ class MyHandler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"<h1>Hello JP ! Python Web Server Running</h1>")
+        self.wfile.write(b"<h1>Hello JP ! This is Version v1.0</h1>")
 
 server = HTTPServer(("0.0.0.0", PORT), MyHandler)
 
