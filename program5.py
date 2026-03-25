@@ -7,7 +7,7 @@ class MyHandler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"<h1>Hi from program5! NEW VERSION v2.0</h1>")
+        self.wfile.write(b"<h1>YOU JP DID THIS FROM POWERSHELL</h1>")
 
 server = HTTPServer(("0.0.0.0", PORT), MyHandler)
 
