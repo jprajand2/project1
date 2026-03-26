@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replica-program4
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: watch-program4
+  template:
+    metadata:
+      labels:
+        project: watch-program4
+    spec:
+      containers:
+      - name: podcontainer1
+        image: jprajand2/program4
+        ports: 
+          - containerPort: 8080
+        imagePullPolicy: IfNotPresent 

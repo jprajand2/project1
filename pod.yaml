@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-program4
+  labels:
+    name: web-app-via-python
+spec:
+  containers:
+  - name: podcontainer1
+    image: jprajand2/program4
+    ports: 
+      - containerPort: 8080
+    imagePullPolicy: IfNotPresent
